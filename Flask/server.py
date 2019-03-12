@@ -35,12 +35,6 @@ def my_ip():
     'ip': request.remote_addr
   }), 200
 
-@app.route('/kleur', methods=['GET'])
-def kleur():
-  return jsonify({
-    'ip': request.remote_addr
-  }), 200
-
 # Define the api_environment route
 @app.route('/api/environment', methods=['GET'])
 def api_environment():
@@ -78,6 +72,25 @@ def environment():
     }
   }
   return render_template('environment.html', environment=environment_obj)
+
+  
+@app.route('/kleur', methods=['GET'])
+def kleur():
+  environment_obj = {
+    # 'temperature': {
+    #   'value': round(sense.get_temperature()),
+    #   'unit': u'C'
+    # },
+    # 'humidity': {
+    #   'value': round(sense.get_humidity()),
+    #   'unit': u'%'
+    # },
+    # 'pressure': {
+    #   'value': round(sense.get_pressure()),
+    #   'unit': u'mbar'
+    # }
+  }
+  return render_template('index.html', environment=environment_obj)
 
 # Main method for Flask server
 if __name__ == '__main__':
