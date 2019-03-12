@@ -90,7 +90,7 @@ def kleur():
     #   'unit': u'mbar'
     # }
   }
-  return render_template('index.html', environment=environment_obj)
+  return render_template('index.html', index=environment_obj)
 
 # Main method for Flask server
 if __name__ == '__main__':
