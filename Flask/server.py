@@ -41,15 +41,15 @@ def api_environment():
   environment_obj = {
     'temperature': {
       'value': round(sense.get_temperature()),
-      'unit': 'C'
+      'unit': u'C'
     },
     'humidity': {
       'value': round(sense.get_humidity()),
-      'unit': '%'
+      'unit': u'%'
     },
     'pressure': {
       'value': round(sense.get_pressure()),
-      'unit': 'mbar'
+      'unit': u'mbar'
     }
   }
   return jsonify(environment_obj), 200
