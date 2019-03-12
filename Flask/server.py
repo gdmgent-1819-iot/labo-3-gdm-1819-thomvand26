@@ -35,6 +35,12 @@ def my_ip():
     'ip': request.remote_addr
   }), 200
 
+@app.route('/kleur', methods=['GET'])
+def kleur():
+  return jsonify({
+    'ip': request.remote_addr
+  }), 200
+
 # Define the api_environment route
 @app.route('/api/environment', methods=['GET'])
 def api_environment():
