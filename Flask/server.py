@@ -41,7 +41,7 @@ def api_environment():
   environment_obj = {
     'temperature': {
       'value': round(sense.get_temperature()),
-      'unit': u'C'
+      'unit': u'°C'
     },
     'humidity': {
       'value': round(sense.get_humidity()),
@@ -60,7 +60,7 @@ def environment():
   environment_obj = {
     'temperature': {
       'value': round(sense.get_temperature()),
-      'unit': u'C'
+      'unit': u'°C'
     },
     'humidity': {
       'value': round(sense.get_humidity()),
