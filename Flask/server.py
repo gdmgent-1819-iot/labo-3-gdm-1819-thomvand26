@@ -8,6 +8,9 @@ Installation:
 sudo pip3 -U Flask
 Docs: http://flask.pocoo.org/docs/1.0/
 '''
+
+# -*- coding: utf-8 -*-
+
 # Import the libraries
 from flask import Flask, jsonify, render_template, request
 from sense_hat import SenseHat
