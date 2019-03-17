@@ -9,8 +9,10 @@ sudo pip3 -U Flask
 Docs: http://flask.pocoo.org/docs/1.0/
 '''
 
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 # Import the libraries
-from __future__ import unicode_literals
 from flask import Flask, jsonify, render_template, request
 from sense_hat import SenseHat
 
